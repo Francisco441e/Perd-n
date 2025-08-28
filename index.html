@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Perdón</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <!-- Sobre al inicio -->
+    <div id="sobre-container" onclick="abrirCarta()">
+      <img id="sobre-img" src="sobre-cerrado.png" alt="Sobre cerrado">
+      <p class="abrir-texto">Abre esta carta que te<br>hize con mucho cariño🤍</p>
+    </div>
+
+    <!-- Carta -->
+    <div id="carta" class="hidden">
+        <h1 class="titulo">Niñaaa, perdón por hacerte enojar💔</h1>
+      <p class="contenido">
+        Querida mejor amiga Nancy<br>
+        se que cometí un error y que te hice sentir mal, y de verdad lo siento y
+        no me importa que digas que los hombres mienten, tienes que creerme.<br>
+        Me importas muchisimo, quiero que sepas que de verdad me importas, por eso es que
+        te hago esta carta, vas a decir que que exagerado soy pero pues tenia que pedirle perdón
+        a mi mejor amiguita, acuerdate que si no me hablas me muero 
+        Ya no te haré enojar. 💌
+        <br><br>Con cariño: Tu Mejor Amiguito <br>TE QUIERO MUCHO,aun que no me <br>creas,
+        TE QUIERO MUCHO🤍
+      </p>
+      <button class="boton-leido" onclick="mostrarDecision()">Si ya leiste la carta, picale a este boton jaja</button>
+    </div>
+
+    <!-- Flor decorativa -->
+    <img id="flor" src="flor.png" alt="Flor decorativa" class="flor hidden"/>
+
+    <!-- Pregunta de perdón -->
+    <div id="decision" class="hidden">
+      <h2 class="pregunta">¿Me perdonas?</h2>
+      <div class="botones-perdon">
+        <button class="boton-si" onclick="mostrarGracias()">Sí 💖</button>
+        <button class="boton-no" onclick="moverBoton(this)">No 💔</button>
+      </div>
+    </div>
+
+    <!-- Mensaje de agradecimiento -->
+    <div id="agradecimiento" class="hidden">
+      <h2>¡Gracias por perdonarme, ya no te hare enojar niña🥺! </h2>
+      <p class="gracias"> 💗</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

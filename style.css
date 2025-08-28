@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+    background: linear-gradient(to bottom, #ffe4ec, #ffcfe0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  #sobre-container {
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+  
+  #sobre-container:hover {
+    transform: scale(1.05);
+  }
+  
+  #sobre-img {
+    width: 180px;
+    transition: all 0.5s ease;
+  }
+  
+  .abrir-texto {
+    color: #e04379;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .titulo {
+    font-family: 'Pacifico', cursive;
+    font-size: 37px;
+    color: #ca4171;
+    margin-bottom: 10px;
+  }
+  
+  .contenido {
+    font-size: 18px;
+    max-width: 500px;
+    margin: 0 auto 20px;
+    color: #4a4a4a;
+  }
+  
+  .boton-leido {
+    padding: 10px 20px;
+    background-color: #f782a3;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease;
+  }
+  
+  .boton-leido:hover {
+    background-color: #f45d88;
+  }
+  
+  .flor {
+    width: 60px;
+    margin-top: 20px;
+    animation: girar 4s infinite linear;
+  }
+  
+  @keyframes girar {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+  
+  .pregunta {
+    font-size: 28px;
+    color: #cc3366;
+    margin-top: 20px;
+  }
+  
+  .botones-perdon button {
+    margin: 10px;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 15px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: transform 0.2s, background 0.3s;
+  }
+  
+  .boton-si {
+    background-color: #b4e197;
+    color: #355e3b;
+  }
+  
+  .boton-no {
+    background-color: #f9a7b0;
+    color: #9b1c31;
+    position: relative;
+  }
+  
+  #agradecimiento h2 {
+    font-size: 28px;
+    color: #d93f87;
+  }
+  
+  .gracias {
+    font-size: 18px;
+    color: #4a4a4a;
+  }
+  
+  .hidden {
+    display: none;
+  }
